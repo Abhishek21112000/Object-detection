@@ -1,0 +1,17 @@
+Open Command Prompt (CMD) and navigate to the YOLOv5 directory:
+cd yolov5
+Install Required Libraries:
+Install the necessary Python libraries by running:
+pip install -r requirements.txt
+Object Detection Using Camera:
+To enable object detection using your webcam, enter the following command in CMD:
+python detect.py --source 0
+This command activates the camera (denoted by --source 0) and uses it as the input for real-time object detection.
+Object Detection Using a Predefined Database:
+To perform object detection using images from a specific directory, use:
+python detect.py --weights yolov5x.pt --source "path_to_your_database"
+Replace "path_to_your_database" with the actual path to your image database. This command specifies the model weights (yolov5x.pt) and the source directory containing your images.
+Notes:
+Ensure that Python and pip are correctly installed on your system before running these commands.
+The --weights argument specifies the model weights file, which you need to have downloaded in your YOLOv5 folder.
+Replace path_to_your_database with the actual file path to your image database for accurate object detection.
